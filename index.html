@@ -3,20 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
-    <script src="./jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+
+
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script>
+
         document.getElementsByTagName( "html" )[ 0 ].className += " js";
     </script>
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+    <!-- Slick -->
+    <link rel="stylesheet"  href="slick/slick.css">
+    <link rel="stylesheet"  href="slick/slick-theme.css">
+
+
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,15 +50,14 @@
         <section class="active">
             <section class="cd-section cd-section--bg-fixed" id="fades" style="height: 100vh">
                 <div class="container container--lg headline">
+                    <video autoplay muted loop id="myVideo">
+                        <source src=".\videos\Fuego_de_Refineria-small.mp4" type="video/mp4" media="all and (max-width: 480px)"> 
+                        <source src=".\videos\Fuego_de_Refineria-small.webm" type="video/webm" media="all and (max-width: 480px)"> 
+                        <source src=".\videos\Fuego_de_Refineria.mp4" type="video/mp4"> 
+                        <source src=".\videos\Fuego_de_Refineria.webm" type="video/webm"> 
+                    </video>
                     <div class="text-component text--center" id="translated">
-                        <video autoplay muted loop id="myVideo">
-                            
-                            <source src=".\videos\Fuego_de_Refineria-small.mp4" type="video/mp4" media="all and (max-width: 480px)"> 
-                            <source src=".\videos\Fuego_de_Refineria-small.webm" type="video/webm" media="all and (max-width: 480px)"> 
-                            <source src=".\videos\Fuego_de_Refineria.mp4" type="video/mp4"> 
-                            <source src=".\videos\Fuego_de_Refineria.webm" type="video/webm"> 
-                                      
-                        </video>
+                        
                         <br>
                         <br>
                         <br>
@@ -79,7 +84,7 @@
                     <p style="text-align:center" id="translateu"><a href="http://www.bitswaves.org/">Waves 2019</a></p>
                 </div>
             </section>
-            <section class="cd-section " id="about">
+            <section class="cd-section" id="about">
                 <div class="container container--lg headline">
                     <div class="text-component">
                         <p align="justify" style="color:#FFFFFF;max-width: 97.5%">Everyone wants a chance. Everyone
@@ -232,9 +237,24 @@
                         </h3>
                     </div>
                 </div>
+                
             </section>
-          <section class="cd-section cd-section--bg-fixed" style="display: block;"> 
-            <div id="history" class="history"></div> 
+            <section class="container slick">
+                <div class ="multiple-items">
+                    <div><img src="win\1.jpg"></div>
+                    <div><img src="win\2.jpg"></div>
+                    <div><img src="win\3.jpg"></div>
+                    <div><img src="win\4.jpg"></div>
+                    <div><img src="win\5.jpg"></div>
+                    <div><img src="win\6.jpg"></div>
+                    <div><img src="win\7.jpg"></div>
+                    <div><img src="win\8.jpg"></div>
+                    <div><img src="win\9.jpg"></div>
+                    <div><img src="win\10.jpg"></div>
+            </div>
+            </section>
+            <script type="text/javascript" src="jquery.min.js"></script>
+            <script type="text/javascript" src="slick/slick.min.js"></script>
              
             </section>
             <section class="cd-section" id="contact">
@@ -267,6 +287,9 @@
             <script src="./index.js" async></script>
         </section>
     </main>
+
+
+
 </body>
 
 </html>
