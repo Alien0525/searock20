@@ -278,8 +278,8 @@ max-width:var(--container-width-lg)
 	align-self: center;
 }
 .multiple-items{
+	text-align: center;
 	z-index: 10;
-	width: 60%;
 	margin: 2rem auto;
 	background-color: rgb(26, 26, 26, 0.25);
 }
