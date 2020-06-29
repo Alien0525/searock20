@@ -41,12 +41,12 @@ const bands = [
   },
 ];
 
-function list(band) {
-  return `
-      <div><img src="./win/${band.no}.jpg"/><br>
-      <h1>${band.name}</h1></div>
-      `;
-}
+// function list(band) {
+//   return `
+//       <div><img src="./win/${band.no}.jpg"/><br>
+//       <h1>${band.name}</h1></div>
+//       `;
+// }
 // document.getElementById("history").innerHTML = `${bands.map(list).join("")}`;
 
 // Slick//
@@ -55,16 +55,12 @@ $(document).ready(function () {
       // centerMode: true,
       // centerPadding: '60px',
     dots: true,
-    arrows:true,
     infinite: true,
     speed: 500,
     fade: true,
     cssEase: "linear",
       autoplay: true,
     autoplaySpeed: 2000,
-    
-    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
   });
 });
 
