@@ -831,7 +831,7 @@ A:hover {
 @-webkit-keyframes up {
   0% {
     left: 0;
-    top: 100px;
+/*     top: 100px;
   }
   100% {
     left: 0;
@@ -863,6 +863,173 @@ A:hover {
   tr {
     display: block;
   }
+ */
+.cd-section:nth-child(2){
+background-color:#cd3333;
+text-overflow:ellipsis;
+background-color:var(--cd-color-2)
+}
+.cd-section:nth-child(3){
+background-image:url(img/cd-background-2.jpg)
+}
+.cd-section:nth-child(4){
+background-color:#3c3435;
+background-color:var(--cd-color-1)
+}
+.cd-section:nth-child(6){
+background-color:#fff;
+background-color:#fff
+}
+.cd-section:nth-child(4) .text-component a,.cd-section:nth-child(4) .text-component h1,.cd-section:nth-child(4) .text-component h2,.cd-section:nth-child(4) .text-component h4,.cd-section:nth-child(4) .text-component p,.cd-section:nth-child(6) .text-component a,.cd-section:nth-child(6) .text-component h1,.cd-section:nth-child(6) .text-component h2,.cd-section:nth-child(6) .text-component h3,.cd-section:nth-child(6) .text-component h4,.cd-section:nth-child(6) .text-component p{
+color:#fff;
+color:var(--cd-color-3);
+text-shadow:0 1px 3px rgba(0,0,0,.3)
+}
+.cd-section:nth-child(5){
+background-image:url(img/cd-background-3.jpg)
+}
+.cd-section:nth-child(7){
+background-image:url(img/cd-background-4.jpg)
+}
+.cd-section:nth-child(8)
+{background-color:#000000;
+}
+#fades{
+-webkit-animation:fadein 1s;
+-moz-animation:fadein 1s;
+-ms-animation:fadein 1s;
+-o-animation:fadein 1s;
+animation:fadein 1s
+}
+@keyframes fadein{
+from{
+	opacity:0
+}
+to{
+	opacity:1
+}
+}
+@-moz-keyframes fadein{
+from{
+	opacity:0
+}
+to{
+	opacity:1
+}
+}
+@-webkit-keyframes fadein{
+from{
+	opacity:0
+}
+to{
+	opacity:1
+}
+}
+@-ms-keyframes fadein{
+from{
+	opacity:0
+}
+to{
+	opacity:1
+}
+}
+html{
+scroll-behavior:smooth
+}
+#srwhite{
+color:#fff
+}
+#srred{
+color:#cd3333
+}
+
+h5{
+display:inline;
+width:100%;
+padding-bottom:5px;
+text-align:right;
+color:#fff
+}
+A:link{
+COLOR:#fff;
+TEXT-DECORATION:none;
+font-weight:400;
+transition:all .5s
+}
+A:visited{
+COLOR:#fff;
+TEXT-DECORATION:none;
+font-weight:400;
+transition:all .5s
+}
+A:hover{
+COLOR:#d64949;
+TEXT-DECORATION:none;
+font-weight:400;
+transition:all .5s
+}
+#translated{
+position:relative;
+-webkit-animation-name:down;
+-webkit-animation-duration:2s;
+animation-name:down;
+animation-duration:2s
+}
+@-webkit-keyframes down{
+0%{
+	left:0;
+	top:-100px
+}
+100%{
+	left:0;
+	top:0
+}
+}
+@keyframes down{
+0%{
+	left:0;
+	top:-100px
+}
+100%{
+	left:0;
+	top:0
+}
+}
+#translateu{
+position:relative;
+-webkit-animation-name:up;
+-webkit-animation-duration:2s;
+animation-name:up;
+animation-duration:2s
+}
+@-webkit-keyframes up{
+0%{
+	left:0;
+	top:100px
+}
+100%{
+	left:0;
+	top:0
+}
+}
+@media only screen and (max-width:330px) {
+	body {
+		max-width: 100%;
+		min-width: 99%;
+	}
+	 .font-mobile{
+		 font-size: 2.5vh;
+		 table{
+		max-width: 100%;
+	}
+		 table{
+		 max-width: 100%;
+		 }
+}
+}
+@media 
+only screen and (max-width: 455px),
+ (max-device-width: 455px)  {
 
   thead tr {
     position: absolute;
